@@ -1,6 +1,6 @@
 # Site settings
-url: https://www.dollarpromt.com   # with the https protocol
-enforce_ssl: www.dollarpromt.com   # without any protocol
+url: https://dollarpromt.com   # with the https protocol
+enforce_ssl: dollarpromt.com   # without any protocol
 
 title: Dolllar Promt
 description: "Computers and thoughts"
