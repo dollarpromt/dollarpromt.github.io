@@ -4,7 +4,7 @@ enforce_ssl: dollarpromt.com   # without any protocol
 
 title: Dolllar Promt
 description: "Computers and thoughts"
-url: "https://www.dollarpromt.com"
+url: "https://dollarpromt.com"
 author:
   name: "Gajesh Bhat"
   email: "gajeshbht@gmail.com"
