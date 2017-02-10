@@ -1,4 +1,7 @@
 # Site settings
+url: https://www.dollarpromt.com   # with the https protocol
+enforce_ssl: www.dollarpromt.com   # without any protocol
+
 title: Dolllar Promt
 description: "Computers and thoughts"
 url: "https://www.dollarpromt.com"
@@ -38,5 +41,5 @@ custom_nav_footer: false
 reverse: false
 
 #Sitemap Config
-#gems:
-#  - jekyll-sitemap
+gems:
+  - jekyll-sitemap

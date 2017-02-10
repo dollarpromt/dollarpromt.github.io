@@ -3,7 +3,17 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png?">
 
+<!-- Enforcing HTTPS-->
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
 {% include head.html %}
+
+<!-- Canonical Tag-->
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
 <body>
 	<div id="wrap">

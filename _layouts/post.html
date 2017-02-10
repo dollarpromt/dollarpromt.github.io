@@ -1,6 +1,16 @@
 ---
 layout: default
 ---
+<!-- Forcing HTTPS-->
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<!-- Canonical Tag-->
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+
 <article id="post-page">
 	<h2>{{ page.title }}</h2>
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
