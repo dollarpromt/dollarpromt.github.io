@@ -3,6 +3,13 @@
 <link rel="stylesheet" href="//css/main.css">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png?">
 
+<!-- Enforcing HTTPS-->
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
 <head>
 	<!-- Meta -->
 	<meta charset="UTF-8"/>
@@ -20,6 +27,9 @@
 
 </head>
 
+
+<!-- Canonical Tag-->
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
 <body>
 	<div id="wrap">
@@ -81,7 +91,17 @@
 
 		<main>
 
-			<article id="post-page">
+			<!-- Forcing HTTPS-->
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<!-- Canonical Tag-->
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+
+<article id="post-page">
 	<h2>Hello World</h2>
 	<time datetime="2017-02-10T00:00:00+05:30" class="by-line">10 Feb 2017</time>
 <p>

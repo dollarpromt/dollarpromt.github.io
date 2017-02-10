@@ -3,6 +3,13 @@
 <link rel="stylesheet" href="//css/main.css">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png?">
 
+<!-- Enforcing HTTPS-->
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
 <head>
 	<!-- Meta -->
 	<meta charset="UTF-8"/>
@@ -20,6 +27,9 @@
 
 </head>
 
+
+<!-- Canonical Tag-->
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
 <body>
 	<div id="wrap">
@@ -84,7 +94,7 @@
 			<article id="page">
 
   <h2 id="about">About</h2>
-<p>Dollar Promt is a completly handcrafted blog about computers and thoughts. Brainchild of <a href="https://www.gajeshbhat.com/" target="_blank">Gajesh Bhat</a></p>
+<p>Dollar Promt is a completly handcrafted blog about computers and thoughts. Brainchild of <a href="https://www.gajeshbhat.com/" target="_blank">Gajesh Bhat</a> More features to be added!</p>
 
 
 </article>

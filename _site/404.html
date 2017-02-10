@@ -3,6 +3,13 @@
 <link rel="stylesheet" href="//css/main.css">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png?">
 
+<!-- Enforcing HTTPS-->
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
 <head>
 	<!-- Meta -->
 	<meta charset="UTF-8"/>
@@ -20,6 +27,9 @@
 
 </head>
 
+
+<!-- Canonical Tag-->
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
 <body>
 	<div id="wrap">
