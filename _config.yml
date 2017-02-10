@@ -41,3 +41,5 @@ custom_nav_footer: false
 reverse: false
 
 #Sitemap Config
+gems:
+  - jekyll-sitemap
