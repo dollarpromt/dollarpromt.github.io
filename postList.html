@@ -6,7 +6,7 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="postList.css">
 <nav>
-     <a href="#allposts">All posts</a>,
+     <a href="#allposts">All Posts</a>,
      <a href="#categoryone">By Name</a>
      <a href="#categorytwo">By Date</a>
      <a href="#categorythree">By Readtime</a>
@@ -16,10 +16,11 @@ layout: default
      <h2>All posts</h2>
          <ul>
 
- {% for post in site.categories.[page.category] limit: 8 %}
- {% include photo-item.html %}
- {% endfor %}
+           {% for post in site.categories.[page.category] limit: 8 %}
+           {% include photo-item.html %}
+           {% endfor %}
 
+      </ul>
  </div>
 
 
