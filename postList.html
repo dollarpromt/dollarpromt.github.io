@@ -11,12 +11,9 @@
      <h2>All posts</h2>
          <ul>
            {% for post in site.posts %}
-       {
-           "title": "{{ post.title | xml_escape }}",
-           "url": "{{ site.url }}{{ post.url }}",
-           "date": "{{ post.date | date_to_xmlschema }}"
-       }{% unless forloop.last %},{% endunless %}
-       {% endfor %}
+   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+   <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>
+{% endfor %}	
          </ul>
  </div>
 
