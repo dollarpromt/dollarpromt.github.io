@@ -1,6 +1,40 @@
-<div>
-{% for post in site.posts %}
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="https://github.com/dollarpromt/dollarpromt.github.io/tree/master/_posts/{{ post.url }}#disqus_thread"></a></small></p>
-{% endfor %}
-</div>
+<h1>Archive page</h1>
+<link rel="stylesheet" href="PostList.css">
+<nav>
+     <a href="#allposts">All posts</a>,
+     <a href="#categoryone">By Name</a>
+     <a href="#categorytwo">By Date</a>
+     <a href="#categorythree">By Readtime</a>
+</nav>
+
+<div class="catbloc" id="allposts">
+     <h2>All posts</h2>
+         <ul>
+
+         </ul>
+ </div>
+
+
+<div class="catbloc" id="categoryone">
+     <h2>By Name </h2>
+         <ul>
+                <!-- Filter Posts By Name-->
+         </ul>
+ </div>
+
+
+<div class="catbloc" id="categorytwo">
+     <h2>By Date </h2>
+         <ul>
+                 <!-- Filter Posts By Name-->
+         </ul>
+ </div>
+
+
+
+<div class="catbloc" id="categorythree">
+     <h2>By Readtime </h2>
+         <ul>
+                <!-- Filter Posts By Name-->
+         </ul>
+ </div>
