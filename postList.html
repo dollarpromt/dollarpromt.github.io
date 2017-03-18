@@ -9,20 +9,16 @@ layout: default
      <a href="#allposts">All Posts</a>,
      <a href="#categoryone">By Name</a>
      <a href="#categorytwo">By Date</a>
-     <a href="#categorythree">By Readtime</a>
+     <a href="#categorythree">By Read time</a>
 </nav>
 
 <div class="catbloc" id="allposts">
-     <h2>All posts</h2>
+     <h2>All Posts</h2>
          <ul>
-
-           {%for post in site.posts %}
-    {% unless post.next %}
-      <ul class="this">
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
+           {% for post in site.posts %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>
+{% endfor %}
         </ul>
 
       </ul>
@@ -47,7 +43,7 @@ layout: default
 
 
 <div class="catbloc" id="categorythree">
-     <h2>By Readtime </h2>
+     <h2>By Read time </h2>
          <ul>
                 <!-- Filter Posts By Name-->
          </ul>
