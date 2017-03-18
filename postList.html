@@ -1,4 +1,9 @@
+---
+layout: default
+---
+
 <h1>Archive page</h1>
+
 <link rel="stylesheet" type="text/css" href="postList.css">
 <nav>
      <a href="#allposts">All posts</a>,
@@ -14,7 +19,7 @@
  {% for post in site.categories.[page.category] limit: 8 %}
  {% include photo-item.html %}
  {% endfor %}
- 
+
  </div>
 
 
